@@ -14,8 +14,16 @@ name: "CodeQL Advanced"
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - '**.go'
+      - 'go.mod'
+      - 'go.sum'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - '**.go'
+      - 'go.mod'
+      - 'go.sum'
   schedule:
     - cron: '41 12 * * 1'
 
