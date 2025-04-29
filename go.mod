@@ -1,3 +1,3 @@
 module github.com/x13a/go-charm
 
-go 1.24
+go 1.24.2
