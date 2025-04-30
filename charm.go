@@ -56,7 +56,7 @@ func (x *xoodoo) permute() {
 	st := &x.state
 	var e [4]uint32
 	for r := 0; r < len(roundConstants); r++ {
-		for i := 0; i < 4; i++ {
+		for i := 0; i < len(e); i++ {
 			e[i] = rot32(st[i]^st[i+4]^st[i+8], 18)
 			e[i] ^= rot32(e[i], 9)
 		}
